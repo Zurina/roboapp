@@ -2,7 +2,7 @@
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Zurina.github.io/robo/",
+  "homepage": "https://Zurina.github.io/roboapp/",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "git": "^0.1.5",

@@ -11,7 +11,7 @@ class Header extends Component {
         console.log("HEADER")
         return (
             <div>
-                <h1 className='f1'>RoboFriends</h1>
+                <h1 className='f1'>RoboFriends!!</h1>
                 <CounterButton color={'red'} /> {/*Rerender CounterButton only if state changes*/}
             </div>
         )
