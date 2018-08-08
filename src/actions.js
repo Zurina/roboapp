@@ -15,20 +15,21 @@ export const setSearchField = (text) => {
 // Redux thunk will note that the action returns a function, and therefore give it the dispatch function.
 //Redux thunk helps with actions that return a function, and redux thunk will then provide the dispatch function to the returned function.
 
-/*export const requestRobots = () => (dispatch) => {
-    dispatch({ type: REQUEST_ROBOTS_PENDING});
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response=> response.json())
-      .then(data => dispatch({ type: REQUEST_ROBOTS_SUCCESS, payload: data }))
-      .catch(error => dispatch({type: REQUEST_ROBOTS_FAILED, payload: error}))
-}*/
-
-
-//Normal way, doesnt use redux thunk
-export const requestRobots = (dispatch) => { 
+export const requestRobots = () => (dispatch) => {
     dispatch({ type: REQUEST_ROBOTS_PENDING});
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response=> response.json())
       .then(data => dispatch({ type: REQUEST_ROBOTS_SUCCESS, payload: data }))
       .catch(error => dispatch({type: REQUEST_ROBOTS_FAILED, payload: error}))
 }
+
+
+//Normal way, doesnt use redux thunk
+/*
+export const requestRobots = (dispatch) => { 
+    dispatch({ type: REQUEST_ROBOTS_PENDING});
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response=> response.json())
+      .then(data => dispatch({ type: REQUEST_ROBOTS_SUCCESS, payload: data }))
+      .catch(error => dispatch({type: REQUEST_ROBOTS_FAILED, payload: error}))
+}*/
