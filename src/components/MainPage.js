@@ -54,7 +54,7 @@ class MainPage extends Component {
             }
           </Scroll>
         </div>
-      );
+    );
   }
 }
 
