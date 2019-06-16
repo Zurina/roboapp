@@ -1,5 +1,6 @@
 script:
   - gem install bundler
+  - npm i
   - npm run test
 after_success:
   - npm run predeploy
