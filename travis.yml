@@ -1,6 +1,7 @@
 language: node_js
 node_js: node
 cache: npm
+before_install: gem install bundler
 script:
   - npm run test
 after_success:
